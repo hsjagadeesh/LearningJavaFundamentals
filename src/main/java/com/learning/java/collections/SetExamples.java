@@ -24,6 +24,7 @@ public class SetExamples {
 
 		System.out.println(linkedHashSet.add("Jagadeesh"));
 		System.out.println(linkedHashSet.size());
+		System.out.println(linkedHashSet);
 		print(linkedHashSet);
 		
 		System.out.println("TREE SET");
@@ -32,7 +33,8 @@ public class SetExamples {
 		sortedSetImpl.add("Nanda");
 		sortedSetImpl.add("mananya");
 		sortedSetImpl.add("Tanush");
-		
+   
+		System.out.println(sortedSetImpl);
 		print(sortedSetImpl);
 		
 		Set<String> synchronizedSet = Collections.synchronizedSet(linkedHashSet);

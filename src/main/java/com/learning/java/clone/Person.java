@@ -27,12 +27,12 @@ public class Person implements Cloneable {
 	}
 
 	public Object clone() throws CloneNotSupportedException {
-//		return super.clone();
-//		
-		Object object = super.clone();
-		((Person) object).setName(this.name.toString());
-		((Person) object).setAge(this.age);
-		return object;
+		return super.clone();
+////
+//		Object object = super.clone();
+//		((Person) object).setName(this.name.toString());
+//		((Person) object).setAge(this.age);
+//		return object;
 
 	}
 

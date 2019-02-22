@@ -7,7 +7,7 @@ import java.util.List;
 public class ChildClass extends BaseClass {
 
 	@Override
-	public ArrayList getList() {
+	public ArrayList getList() throws RuntimeException  {
 		System.out.println("Child Class");
 		return null;
 	}

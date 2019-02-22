@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BaseClass {
 
-	public List getList() {
+	public List getList() throws Exception {
 		System.out.println("Base Class");
 		return null;
 	}

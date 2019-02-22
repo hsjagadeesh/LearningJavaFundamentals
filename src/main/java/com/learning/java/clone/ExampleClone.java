@@ -10,6 +10,10 @@ public class ExampleClone {
 		System.out.println(clonePerson);
 		
 		System.out.println(person.getName() == (clonePerson.getName()));
+
+		clonePerson.setName("Test");
+		System.out.println(clonePerson.getName());
+		System.out.println(person.getName());
 	}
 
 }
