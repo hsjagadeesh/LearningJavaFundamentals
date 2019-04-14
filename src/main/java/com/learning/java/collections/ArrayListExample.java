@@ -14,14 +14,27 @@ public class ArrayListExample {
 		listStr.add("2");
 		listStr.add("3");
 		listStr.add("4");
+
+		for (int i = 0; i < listStr.size(); i++) {
+			if(i %2 == 0) {
+				listStr.add(i, "Testing");
+			}
+		}
+
+//		for (String str : listStr) {
+//			System.out.println(str);
+//		}
+
 //		listStr.add("5");
-		
+
+//		ConcurrentModificationException
 		Iterator<String> iterator = listStr.iterator();
 		while(iterator.hasNext()) {
 			String next = iterator.next();
 			if(next.equalsIgnoreCase("2")) {
 //				listStr.set(2, "Three");
 				listStr.remove(next);
+				iterator.next();
 //				iterator.remove();
 			}
 		}

@@ -27,7 +27,10 @@ public class StreamExample {
 		
 		for (String string : collect) {
 			System.out.println(string);
-		}		
+		}
+
+//		lstOfPersons.stream()
+//				.collect(Collectors.toMap());
 	}
 	
 	public String testing(Person person) {

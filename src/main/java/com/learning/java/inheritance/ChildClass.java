@@ -6,6 +6,10 @@ import java.util.List;
 
 public class ChildClass extends BaseClass {
 
+	public static void main(String[] args) {
+		new ChildClass().getData();
+	}
+
 	@Override
 	public ArrayList getList() throws RuntimeException  {
 		System.out.println("Child Class");
